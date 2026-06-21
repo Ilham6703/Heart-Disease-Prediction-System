@@ -48,7 +48,7 @@ async function predictRisk() {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/predict",
+            "https://heart-disease-prediction-system-nlpn.onrender.com/predict",
             {
                 method: "POST",
 
