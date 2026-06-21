@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Risk Predictor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="glass-card">
+            <h1>❤️ Heart Risk Predictor</h1>
+            <p class="subtitle"> AI Powered Heart Disease Risk Assessment </p>
+            <div class="form-grid">
+                <div class="field"> <label>Age</label> <input type="number" id="Age" placeholder="Enter Age"> </div>
+                <div class="field"> <label>Resting Blood Pressure</label> <input type="number" id="RestingBP"
+                        placeholder="Enter Blood Pressure"> </div>
+                <div class="field"> <label>Cholesterol</label> <input type="number" id="Cholesterol"
+                        placeholder="Enter Cholesterol Level"> </div>
+                <div class="field"> <label>Fasting Blood Sugar</label> <select id="FastingBS">
+                        <option value="0">Normal</option>
+                        <option value="1">High (>120 mg/dl)</option>
+                    </select> </div>
+                <div class="field"> <label>Maximum Heart Rate</label> <input type="number" id="MaxHR"
+                        placeholder="Enter Maximum Heart Rate"> </div>
+                <div class="field"> <label>Old Peak</label> <input type="number" step="0.1" id="Oldpeak"
+                        placeholder="Enter Old Peak"> </div>
+                <div class="field"> <label>Sex</label> <select id="Sex">
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select> </div>
+                <div class="field"> <label>Chest Pain Type</label> <select id="ChestPainType">
+                        <option value="ATA">Atypical Angina</option>
+                        <option value="NAP">Non-Anginal Pain</option>
+                        <option value="TA">Typical Angina</option>
+                        <option value="ASY">Asymptomatic</option>
+                    </select> </div>
+                <div class="field"> <label>Resting ECG</label> <select id="RestingECG">
+                        <option value="Normal">Normal</option>
+                        <option value="ST">ST-T Abnormality</option>
+                        <option value="LVH">Left Ventricular Hypertrophy</option>
+                    </select> </div>
+                <div class="field"> <label>Exercise Induced Angina</label> <select id="ExerciseAngina">
+                        <option value="Y">Yes</option>
+                        <option value="N">No</option>
+                    </select> </div>
+                <div class="field"> <label>ST Slope</label> <select id="ST_Slope">
+                        <option value="Flat">Flat</option>
+                        <option value="Up">Upsloping</option>
+                        <option value="Down">Downsloping</option>
+                    </select> </div>
+            </div> <button onclick="predictRisk()"> Analyze Risk </button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
